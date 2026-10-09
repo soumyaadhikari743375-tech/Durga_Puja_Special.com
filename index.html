@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Soumya's Creation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+
+<section id="namePage" class="screen active">
+  <div class="glass-card welcome-card">
+    <div class="brand">Soumya's Creation</div>
+    <div class="durga-symbol">ॐ</div>
+    <h1>দুর্গাপূজা কুইজ</h1>
+    <p class="subtitle">১০টি সহজ প্রশ্নের উত্তর দাও এবং তোমার স্কোর দেখো।</p>
+    <label for="playerName">তোমার নাম</label>
+    <input id="playerName" type="text" maxlength="25" placeholder="নাম লিখুন" autocomplete="off">
+    <button id="startBtn" class="main-btn">কুইজ শুরু করুন</button>
+    <p id="nameError" class="error"></p>
+  </div>
+</section>
+
+<section id="quizPage" class="screen">
+  <div class="quiz-top">
+    <div class="brand small-brand">Soumya's Creation</div>
+    <div class="score-pill">Score: <span id="score">0</span></div>
+  </div>
+  <div class="progress-wrap">
+    <span id="progressText">প্রশ্ন ১ / ১০</span>
+    <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+  </div>
+  <div id="quizCard" class="quiz-card">
+    <div class="question-number" id="questionNumber">01</div>
+    <h2 id="questionText">প্রশ্ন এখানে আসবে</h2>
+    <div id="options" class="options"></div>
+    <p id="answerMessage" class="answer-message"></p>
+  </div>
+  <div id="celebration" class="celebration" aria-hidden="true"></div>
+</section>
+
+<section id="resultPage" class="screen">
+  <div class="glass-card result-card">
+    <div class="result-icon">🏆</div>
+    <div class="brand">Soumya's Creation</div>
+    <p class="complete-text">কুইজ সম্পূর্ণ!</p>
+    <h1 id="resultName">Player</h1>
+    <div class="final-score"><span id="finalScore">0</span><small>/ 10</small></div>
+    <p id="resultMessage" class="result-message"></p>
+    <button id="leaderboardBtn" class="main-btn">🏆 Leaderboard দেখুন</button>
+    <button id="restartBtn" class="secondary-btn">আবার খেলুন</button>
+  </div>
+</section>
+
+<section id="leaderboardPage" class="screen">
+  <div class="leaderboard-card">
+    <div class="leaderboard-head">
+      <div><div class="brand">Soumya's Creation</div><h1>🏆 Leaderboard</h1></div>
+      <button id="backBtn" class="back-btn">←</button>
+    </div>
+    <p id="leaderboardStatus" class="leaderboard-status">Score লোড হচ্ছে...</p>
+    <div id="leaderboardList" class="leaderboard-list"></div>
+  </div>
+</section>
+
+</main>
+<script type="module" src="script.js"></script>
+</body>
+</html>
